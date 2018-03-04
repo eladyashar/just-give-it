@@ -2,7 +2,7 @@ const mongod = require('mongodb');
 const mongo = mongod.MongoClient;
 
 function dbConn(collectionName)  {
-    this.URL = "mongodb://localhost:27017/JustGiveIt";
+    this.URL = "mongodb://localhost:27017/helpool";
     // this.URL = "mongodb://root:root@ds255768.mlab.com:55768/helpool";
     this.collection = collectionName;
 }
