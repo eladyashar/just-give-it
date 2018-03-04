@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="register" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blur Admin</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+
+  <link rel="stylesheet" href="../lib/bootstrap.css" >
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../stylesheets/auth.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/angular.js"></script>
+    <script type="text/javascript" src="../javascripts/register.js"></script>
+</head>
+<body ng-controller="registerController">
+<main class="auth-main">
+  <div class="auth-block">
+    <h1>Sign in to Helpool</h1>
+    <a href="login.html" class="auth-link">Already register in Helpool? Sign in!</a>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="inputFirstName" class="col-sm-3 control-label">First name</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" ng-model="firstName" placeholder="First name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputLastName" class="col-sm-3 control-label">Last name</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputLastName" ng-model="lastName" placeholder="Last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputName3" class="col-sm-3 control-label">User name</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputName3" ng-model="userName" placeholder="User Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="inputEmail3" ng-model="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+
+        <div class="col-sm-9">
+          <input type="password" class="form-control" id="inputPassword3" ng-model="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-3 control-label">Confirm password</label>
+
+        <div class="col-sm-9">
+          <input type="password" class="form-control" id="inputConfirmPass3" ng-model="ConfirmPass" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type="submit" class="btn btn-default btn-auth" ng-click="signUp()">Sign up</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</main>
+</body>
+</html>
