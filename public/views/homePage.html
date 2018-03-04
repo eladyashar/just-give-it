@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="appModule">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blur Admin</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../lib/ionicons.css" >
+  <link rel="stylesheet" href="../lib/angular-toastr.css" >
+  <link rel="stylesheet" href="../lib/animate.css" >
+  <link rel="stylesheet" href="../lib/bootstrap.css" >
+  <link rel="stylesheet" href="../lib/bootstrap-select.css" >
+  <link rel="stylesheet" href="../lib/bootstrap-switch.css" >
+  <link rel="stylesheet" href="../lib/bootstrap-tagsinput.css" >
+  <link rel="stylesheet" href="../lib/font-awesome.css" >
+  <link rel="stylesheet" href="../lib/fullcalendar.css" >
+  <link rel="stylesheet" href="../lib/leaflet.css" >
+  <link rel="stylesheet" href="../lib/angular-progress-button-styles.min.css" >
+  <link rel="stylesheet" href="../lib/chartist.min.css" >
+  <link rel="stylesheet" href="../lib/morris.css" >
+  <link rel="stylesheet" href="../lib/ion.rangeSlider.css" >
+  <link rel="stylesheet" href="../lib/ion.rangeSlider.skinFlat.css" >
+  <link rel="stylesheet" href="../lib/textAngular.css" >
+  <link rel="stylesheet" href="../lib/xeditable.css" >
+  <link rel="stylesheet" href="../lib/style.css" >
+  <link rel="stylesheet" href="../lib/select.css" >
+  <!-- endbower -->
+  <!-- endbuild -->
+    
+    <link rel="stylesheet" href="../stylesheets/auth.css">
+
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../stylesheets/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap-switch.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../javascripts/app.js"></script>
+    <link rel="stylesheet" href="../stylesheets/nav.css">
+    <link rel="stylesheet" href="../stylesheets/profile.css"> 
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "10%";
+  document.getElementById("mySidebar").style.width = "10%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+<body>
+
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+      <div class="row w3-button">
+          <div class="col-md-2"> 
+            <i class="glyphicon glyphicon-home"></i>
+          </div>
+          <div class="col-md-10">
+              <a href="#!/home" class="w3-bar-item">Home page</a>
+          </div>
+      </div>
+      <div class="row w3-button">
+          <div class="col-md-2"> 
+            <i class="glyphicon glyphicon-map-marker"></i>
+          </div>
+          <div class="col-md-9">
+            <a href="#!/map" class="w3-bar-item">Map</a>
+          </div>
+      </div>
+       <div class="row w3-button">
+          <div class="col-md-2"> 
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+           </div>
+           <div class="col-md-10">
+               <a href="#!/stores" class="w3-bar-item">Stores</a>
+           </div>
+      </div>
+      <div class="row w3-button">
+          <div class="col-md-2"> 
+            <i class="glyphicon glyphicon-user"></i>
+          </div>
+          <div class="col-md-10">
+              <a href="#!/profile" class="w3-bar-item">Profile</a>
+          </div>
+      </div>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Helpool</h1>
+  </div>
+</div>
+
+
+<div class="w3-container">
+<div ng-view></div>
+</div>
+
+
+
+</body>
+</html>
