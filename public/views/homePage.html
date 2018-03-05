@@ -51,18 +51,21 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../javascripts/app.js"></script>
-    <script type="text/javascript" src="../lib/ng-map.min.js"></script>
+
+    <script type='text/javascript' src ="../javascripts/profile.js"></script>
     <link rel="stylesheet" href="../stylesheets/nav.css">
     <link rel="stylesheet" href="../stylesheets/profile.css"> 
     <script>
         function w3_open() {
             document.getElementById("main").style.marginLeft = "10%";
-  document.getElementById("mySidebar").style.width = "10%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
+			 document.getElementById("main").style.marginTop = "54px";
+	document.getElementById("mySidebar").style.width = "10%";
+	document.getElementById("mySidebar").style.display = "block";
+	document.getElementById("openNav").style.display = 'none';
         }
         function w3_close() {
             document.getElementById("main").style.marginLeft = "0%";
+			document.getElementById("main").style.marginTop = "0px"
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
         }

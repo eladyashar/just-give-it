@@ -1,7 +1,7 @@
 const routes = require('express').Router();
-const some = require('./users/users.js');
+const users = require('./users/users.js');
 
 // Adds pages to the api
-routes.use('/users', some);
+routes.use('/users', users);
 
 module.exports = routes;

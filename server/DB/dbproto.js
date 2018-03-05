@@ -2,7 +2,8 @@ const mongod = require('mongodb');
 const mongo = mongod.MongoClient;
 
 function dbConn(collectionName)  {
-    this.URL = "mongodb://localhost:27017/JustGiveIt";
+    this.URL = "mongodb://localhost:27017/helpool";
+    // this.URL = "mongodb://root:root@ds255768.mlab.com:55768/helpool";
     this.collection = collectionName;
 }
 
@@ -94,19 +95,19 @@ dbConn.prototype.removeObject = function(objId, callback) {
 
 /**
  * Updates a given object
- * @param {string} objId Id of the object ot update
+ * @param {query} query query that will find the object to update
  * @param {json} whatToUpdate The updates wanted in a fokrm of json
  * @param {fn} callback Returns the id of the updated object
  */
-dbConn.prototype.updateObject = function(objId, whatToUpdate, callback) {
+dbConn.prototype.updateObject = function(query, whatToUpdate, callback) {
     mongo.connect(this.URL, (err, db) => {
         if (err) {
             throw err;
         }
 
-        db.collection(this.collection).update({_id: new mongod.ObjectID(objId)}, {$set: whatToUpdate}, function(err,res) {
+        db.collection(this.collection).update({query}, {$set: whatToUpdate}, function(err,res) {
             if (err) throw err;
-            callback({id:objId});
+            callback({query});
             db.close();
         });
     });
