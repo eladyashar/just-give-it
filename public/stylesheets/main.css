@@ -294,3 +294,8 @@ html { height: 100%;}
     background-color: rgba(250,250,250,.8);
     z-index: 1;
 }
+
+.w3-container {
+	margin-top: -56px;
+	margin-left: 64px;
+}

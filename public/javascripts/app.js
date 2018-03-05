@@ -10,7 +10,8 @@ app.config(function($routeProvider) {
         templateUrl : "dashboard.html"
     })
     .when("/profile", {
-        templateUrl : "profile.html"
+        templateUrl : "profile.html",
+		controller: "profileController"
     })
     .when("/map", {
         templateUrl : "map.html"
