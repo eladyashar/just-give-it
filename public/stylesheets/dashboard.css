@@ -1,0 +1,50 @@
+
+.help-card {
+    border-radius: 5px;
+    min-height: 100px;
+    color:white;
+    /*background-color: rgba(150,150,150,0.5);*/
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top:7px;
+    padding-bottom: 7px;
+    margin-top:20px;
+    
+}
+.help {
+    background-color: rgba(255,127,80,0.5);
+}
+
+.offer {
+    background-color: rgba(153,255,153,0.5);
+}
+
+.date {
+    top:0px;
+    margin-right: 60px;
+    direction: ltr;
+}
+
+.btn-help-card {
+    margin-left: 30px;
+    border:none;
+    font-size: 25px;
+}
+
+button.btn.btn-default {
+    color:white;
+}
+
+.statistic-card {
+    border-radius: 5px;
+    min-height: 100px;
+    color:whitesmoke;
+    /*text-align: center;*/
+    background-color: rgba(95,158,160,0.5);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:13px;
+    padding-bottom: 7px;
+    margin-top:20px;
+    
+}

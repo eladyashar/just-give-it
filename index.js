@@ -4,9 +4,10 @@ const PORT = process.env.PORT || 5000
 const routes = require('./server/routes/index.js')
 //const adminRoutes = require('./server/routes/adminRoutes.js');
 const bodyParser = require('body-parser')
+const session = require('express-session')
 
 var app = express();
-
+app.use(session({ secret: 'this-is-a-secret-token', cookie: { maxAge: 60000 }}));
 app.use(bodyParser.json());
 app.use(routes);
 

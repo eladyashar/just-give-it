@@ -1,0 +1,43 @@
+</br>
+ </br>
+ </br>
+
+  <div class="container">
+   <div class="row"> </div>
+    <div class="row">
+        <div  class="col-lg-8">
+            <div ng-repeat="index in [1,2,3,4,5]" class="help-card" ng-class="{offer:isOffer, help:!isOffer}">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col xs-10">
+                        <h3 class="help-title">{{card.title}}</h3> </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <div class="date">{{card.date}}</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-11 col-md-11 col-sm-11 col xs-11">
+                        <p>{{card.description}}</p>
+                         </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col xs-10"></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">  <button type="button" class="btn btn-default btn-help-card"><i class="glyphicon glyphicon-fire"></i></button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="statistic-card"> 
+            <h2>open request: 28 <i class="glyphicon glyphicon-heart	
+"></i></h2>
+            </div>
+            <div class="statistic-card">
+            <h2>closed request: 7 <i class="glyphicon glyphicon-star-empty	
+                "></i></h2>
+            </div>
+            <div class="statistic-card"> 
+                <h2>succses: 25% &nbsp&nbsp&nbsp&nbsp <i class="glyphicon glyphicon-download-alt"></i></h2>
+              </div>
+            
+        </div>
+    </div>
+</div>

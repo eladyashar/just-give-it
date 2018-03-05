@@ -7,7 +7,8 @@ app.controller('mainController', function($scope, $http) {
 app.config(function($routeProvider) {
     $routeProvider
     .when("/home", {
-        templateUrl : "dashboard.html"
+        templateUrl : "dashboard.html",
+        controller:"dashController"
     })
     .when("/profile", {
         templateUrl : "profile.html",

@@ -1,9 +1,10 @@
 var app = angular.module('login', []);
 
-app.controller('loginController', function($scope, $http) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+app.controller('loginController', function($scope, $http, $location) {
     $scope.signIn = function() {
-        alert("welcome!");
+        $http.post('/users/login', {username: $scope.username, password: $scope.password}).then(function() {
+            alert("logged");
+            document.location.assign('/views/homePage.html');
+        })
     }
 });
