@@ -57,7 +57,7 @@
 
 
     <script type='text/javascript' src ="../javascripts/profile.js"></script>
-
+    <script type="text/javascript" src="../javascripts/map.js"></script>
     <link rel="stylesheet" href="../stylesheets/nav.css">
     <link rel="stylesheet" href="../stylesheets/profile.css"> 
       <link rel="stylesheet" href="../stylesheets/dashboard.css"> 
@@ -131,8 +131,8 @@
 </div>
 
 
-<div class="w3-container">
-    <div ng-if="isMapOn">
+<div class="w3-container" style="margin-top: 30px;">
+    <div ng-if="isMapOn" ng-controller="mapController">
         <div class="pac-card" id="pac-card">
           <div>
             <div id="title" style="text-align: right">
@@ -252,6 +252,7 @@
         });
 
       }
+        
     </script>
     </body>
 </html>

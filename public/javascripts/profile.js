@@ -5,6 +5,6 @@ app.controller('profileController', function($scope, $http) {
                                    firstName: $scope.firstName,
                                    lastName: $scope.lastName,
                                    email: $scope.email,
-                                   password: $scope.passward})
+                                   password: $scope.password})
     }
 });
