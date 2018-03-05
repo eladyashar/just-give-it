@@ -1,7 +1,7 @@
 var app = angular.module('appModule', ["ngRoute"]);
 
 app.controller('mainController', function($scope, $http) {
-
+    $scope.isMapOn = true;
 });
 
 app.config(function($routeProvider) {
@@ -11,7 +11,8 @@ app.config(function($routeProvider) {
         controller:"dashController"
     })
     .when("/profile", {
-        templateUrl : "profile.html"
+        templateUrl : "profile.html",
+		controller: "profileController"
     })
     .when("/map", {
         templateUrl : "map.html"
