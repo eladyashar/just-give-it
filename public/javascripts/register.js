@@ -6,6 +6,10 @@ app.controller('registerController', function($scope, $http) {
                                    firstName: $scope.firstName,
                                    lastName: $scope.lastName,
                                    email: $scope.email,
-                                   password: $scope.passward})
+                                   password: $scope.password}).then(function() {
+                                       alert('New user Created')
+                                   }, function() {
+                                       alert("problem occured")
+                                   })
     }
 });
