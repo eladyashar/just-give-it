@@ -1,7 +1,7 @@
 var app = angular.module('appModule', ["ngRoute"]);
 
 app.controller('mainController', function($scope, $http) {
-
+    $scope.isMapOn = true;
 });
 
 app.config(function($routeProvider) {
